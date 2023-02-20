@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Tic Tac Toe</title>
+    <link rel="icon" type="image/png" href="qxgicon.png">
+
+    <style>
+
+body {
+  font-family: Arial, sans-serif;
+}
+      body {
+        background-color: white;
+      }
+      .header {
+        background-color: #444444;
+        color: white;
+        border-radius: 20px;
+        padding: 10px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .header h2 {
+        font-family: Arial, sans-serif;
+        font-size: 24px;
+        margin: 0;
+      }
+      .header img {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+        border-radius: 20px;
+      }
+      #end-button {
+        background-color: red;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        padding: 5px 10px;
+        cursor: pointer;
+      }
+      #end-button:hover {
+        background-color: darkred;
+      }
+      #game {
+        width: 500px;
+        height: 500px;
+        margin: 0 auto;
+        border: 1px solid black;
+      }
+      #snake {
+        position: relative;
+        width: 20px;
+        height: 20px;
+        background-color: black;
+      }
+      .footer {
+        background-color: #444444;
+        color: rgb(255, 255, 255);
+        border-radius: 20px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div>
+        <img src="qxgtttl.jpg" alt="Tic Tac Toe icon">
+        <h2>Tic Tac Toe</h2>
+      </div>
+      <button onclick="window.location.href='https://qxgaming.github.io/gaming/'" id="end-button">End</button>
+    </div>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <style>
+          .board {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            height: 300px;
+            width: 300px;
+          }
+          .square {
+            background-color: white;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 48px;
+            font-weight: bold;
+          }
+        </style>
+      </head>
+      <body>
+        <div class="board">
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+        </div>
+        <script>
+          const squares = document.querySelectorAll(".square");
+          let turn = "X";
+          squares.forEach(square => {
+            square.addEventListener("click", function(e) {
+              e.target.textContent = turn;
+              turn = turn === "X" ? "O" : "X";
+            });
+          });
+        </script>
+      </body>
+      <h2>Thia game requires 2 peoples. If you want play again, refresh the website.</h2>
+    </html>
+    <style>
+      body {
+        font-family: Arial;
+      }
+    </style>
+  </body>
+</html>
+
+
+
+
